@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Learning Vue.js // Let's see what I can cook up!</title>
 
+    <link rel="stylesheet" href="styles/main.css">
+
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/0.12.16/vue.min.js"></script>
     <script src="js/main.js"></script>
@@ -11,9 +13,21 @@
   <body>
 
     <div class="wrapper">
-      {{ info.name }}
-      {{ info.age }}
-      {{ info.occupation }}
+      <div class="hardcoded">
+        <p class="title">
+          This is hardcoded in the info object inside the data.
+        </p>
+        {{ info.name }}
+        {{ info.age }}
+        {{ info.occupation }}
+      </div>
+      <div class="fromarray">
+        <p class="title">
+          This is being fetched from an array "personal", and being called in the data.
+        </p>
+        {{ personal.likes }}
+        {{ personal.disslikes }}
+      </div>
     </div>
 
   </body>

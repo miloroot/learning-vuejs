@@ -1,2 +1,21 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
+
+body {
+  @include outer-container();
+}
+
+.title {
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.hardcoded {
+  @include span-columns(6);
+  background-color: #f8f8f6;
+}
+
+.fromarray {
+  @include span-columns(6);
+  background-color: #f8f8f6;
+}

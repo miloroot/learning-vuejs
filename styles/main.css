@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+body {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  body::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.title {
+  background-color: lightgray;
+  padding: 10px; }
+
+.hardcoded {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  background-color: #f8f8f6; }
+  .hardcoded:last-child {
+    margin-right: 0; }
+
+.fromarray {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  background-color: #f8f8f6; }
+  .fromarray:last-child {
+    margin-right: 0; }
+
+/*# sourceMappingURL=main.css.map */
