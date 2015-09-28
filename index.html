@@ -13,20 +13,40 @@
   <body>
 
     <div class="wrapper">
-      <div class="hardcoded">
-        <p class="title">
-          This is hardcoded in the info object inside the data.
-        </p>
-        {{ info.name }}
-        {{ info.age }}
-        {{ info.occupation }}
+      <div class="firstrow">
+        <div class="hardcoded">
+          <p class="title">
+            This is hardcoded in the info object inside the data.
+          </p>
+          {{ info.name }}
+          {{ info.age }}
+          {{ info.occupation }}
+        </div>
+        <div class="fromarray">
+          <p class="title">
+            This is being fetched from the object "personal", and being called in the data.
+          </p>
+          {{ personal.likes }} <br>
+          {{ personal.disslikes }}
+        </div>
+        <div class="repeater">
+          <p class="title">
+            Testing Vue.js's v-repeat of an array with objects
+          </p>
+          <ul>
+            <li v-repeat="friend in friends">
+              {{ friend.name }}
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="fromarray">
-        <p class="title">
-          This is being fetched from an array "personal", and being called in the data.
-        </p>
-        {{ personal.likes }}
-        {{ personal.disslikes }}
+      <div class="secondrow">
+        <div class="input">
+          <p class="title">
+            Testing input and data-binding.
+          </p>
+          <input type="text" placeholder="Type something">
+        </div>
       </div>
     </div>
 

@@ -11,11 +11,21 @@ body {
 }
 
 .hardcoded {
-  @include span-columns(6);
+  @include span-columns(4);
   background-color: #f8f8f6;
 }
 
 .fromarray {
-  @include span-columns(6);
+  @include span-columns(4);
+  background-color: #f8f8f6;
+}
+
+.repeater {
+  @include span-columns(4);
+  background-color: #f8f8f6;
+}
+
+.input {
+  @include span-columns(4);
   background-color: #f8f8f6;
 }

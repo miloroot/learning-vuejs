@@ -5,6 +5,14 @@ $(function() {
     disslikes: "when the laptop runs out of power, so I cant code."
   }
 
+  var friends = [
+    {name: "Jasper"},
+    {name: "Jocke"},
+    {name: "Patricio"}
+  ]
+
+  console.log( "friends: ", friends );
+
   new Vue({
     el: ".wrapper",
     data: {
@@ -13,7 +21,8 @@ $(function() {
         age: 27,
         occupation: "web developer"
       },
-      personal: personal
+      personal: personal,
+      friends: friends
     }
   });
 
