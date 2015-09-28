@@ -1,18 +1,14 @@
 $(function() {
 
   new Vue({
-    el: '.wrapper',
+    el: ".wrapper",
     data: {
-      info: { name: "", age: "", occupation: "" }
-    },
-    ready: function() {
-      this.fetchInfo();
-    },
-    methods: {
-      fetchInfo: function() {
-        
+      info: {
+        name: "Milo",
+        age: 27,
+        occupation: "web developer"
       }
     }
-  })
+  });
 
 })
