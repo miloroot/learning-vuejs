@@ -1,14 +1,17 @@
 $(function() {
 
+  // DOM caching
+  var $appendhere = $( '.appendhere' );
+
   var personal = {
     likes: "to drink a good drink and code, at the same time!",
     disslikes: "when the laptop runs out of power, so I cant code."
   }
 
   var friends = [
-    {name: "Jasper"},
-    {name: "Jocke"},
-    {name: "Patricio"}
+    { name: "Jasper" },
+    { name: "Jocke" },
+    { name: "Patricio" }
   ]
 
   console.log( "friends: ", friends );
@@ -22,11 +25,12 @@ $(function() {
         occupation: "web developer"
       },
       personal: personal,
-      friends: friends
+      friends: friends,
+      dirtymessage: "You clicked me, and it was hard!"
     },
     methods: {
       logit: function() {
-        console.log("You clicked me, and it was hard!");
+        $appendhere.append( this.dirtymessage );
       }
     }
   });
