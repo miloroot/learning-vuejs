@@ -23,6 +23,11 @@ $(function() {
       },
       personal: personal,
       friends: friends
+    },
+    methods: {
+      logit: function() {
+        console.log("You clicked me, and it was hard!");
+      }
     }
   });
 
