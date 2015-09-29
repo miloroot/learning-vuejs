@@ -1,5 +1,8 @@
 $(function() {
 
+  // just adding a log to fix issues with github
+  console.log("Git commands work now without sudo?")
+
   // DOM caching
   var $appendhere = $( '.appendhere' );
 
