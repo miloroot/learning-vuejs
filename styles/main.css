@@ -45,13 +45,22 @@ body {
   .repeater:last-child {
     margin-right: 0; }
 
-.input {
+.buttonfunc {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
   background-color: #f8f8f6; }
-  .input:last-child {
+  .buttonfunc:last-child {
+    margin-right: 0; }
+
+.inputfunc {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  background-color: #f8f8f6; }
+  .inputfunc:last-child {
     margin-right: 0; }
 
 /*# sourceMappingURL=main.css.map */

@@ -26,7 +26,12 @@ body {
   background-color: #f8f8f6;
 }
 
-.input {
+.buttonfunc {
+  @include span-columns(4);
+  background-color: #f8f8f6;
+}
+
+.inputfunc {
   @include span-columns(4);
   background-color: #f8f8f6;
 }
