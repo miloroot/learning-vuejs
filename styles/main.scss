@@ -1,46 +1,58 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
 
+$headerbgc : #FF6C76;
+$titlebgc : #FCFD57;
+$divbgc : #B5F75F;
+
 body {
   @include outer-container();
 }
 
+header {
+  background-color: $headerbgc;
+  padding: 10px;
+}
+
 div {
   border-radius: 5px;
+  margin-top: 10px;
 }
 
 .title {
-  background-color: lightgray;
+  background-color: $titlebgc;
   padding: 10px;
   margin-top: 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .hardcoded {
   @include span-columns(4);
-  background-color: #f8f8f6;
+  background-color: $divbgc;
 }
 
 .fromarray {
   @include span-columns(4);
-  background-color: #f8f8f6;
+  background-color: $divbgc;
 }
 
 .repeater {
   @include span-columns(4);
-  background-color: #f8f8f6;
+  background-color: $divbgc;
 }
 
 .buttonfunc {
   @include span-columns(4);
-  background-color: #f8f8f6;
+  background-color: $divbgc;
 }
 
 .inputfunc {
   @include span-columns(4);
-  background-color: #f8f8f6;
+  background-color: $divbgc;
 }
 
 .formfunction {
   @include span-columns(4);
-  background-color: #f8f8f6;
+  background-color: $divbgc;
 }
