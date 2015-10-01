@@ -5,6 +5,10 @@ body {
   @include outer-container();
 }
 
+div {
+  border-radius: 5px;
+}
+
 .title {
   background-color: lightgray;
   padding: 10px;
@@ -32,6 +36,11 @@ body {
 }
 
 .inputfunc {
+  @include span-columns(4);
+  background-color: #f8f8f6;
+}
+
+.formfunction {
   @include span-columns(4);
   background-color: #f8f8f6;
 }
